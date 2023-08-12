@@ -1,0 +1,113 @@
+.about-us {
+    margin-top: 196px;
+    background: var(--black-light-color);
+}
+
+.about-us__wrapper {
+    display: flex;
+}
+
+.about__image-body {
+    width: calc(100% / 2);
+    position: relative;
+}
+
+.about__image {
+    position: absolute;
+    top: -126px;
+    right: 116px;
+    border-radius: 16px;
+}
+
+.about__text {
+    width: calc(100% / 2);
+}
+
+.about__text-title {
+    padding-top: 60px;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.about__text-heading {
+    display: inline-block;
+    width: 50%;
+    padding-top: 48px;
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3.36px;
+    text-transform: uppercase;
+}
+
+.about__text-text {
+    display: inline-block;
+    width: 70%;
+    padding-top: 28px;
+    color: var(--gray-color);
+    line-height: 135.9%; /* 21.744px */
+    letter-spacing: 1.04px;
+}
+
+.about__text-item__wrapper {
+    padding-top: 52px;
+    padding-bottom: 78px;
+    display: flex;
+    gap: 76px;
+}
+
+.about__text-item {
+    max-width: 104px;
+    position: relative;
+}
+
+.about__text-item::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    top: -26px;
+    background: var(--gradient-color);
+}
+
+.item__title {
+    font-size: 12px;
+    line-height: 135.9%; /* 16.308px */
+    letter-spacing: 0.78px;
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.item__value {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 135.9%; /* 43.488px */
+    letter-spacing: 2.08px;
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+    .about__image-body {
+        display: none;
+    }
+    .about__text {
+        width: 100%;
+    }
+}
+@media (max-width: 375px) {
+    .about__text-heading {
+        width: 100%;
+    }
+    .about__text-text {
+        width: 100%;
+    }
+}

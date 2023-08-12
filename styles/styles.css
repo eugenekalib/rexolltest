@@ -1,0 +1,9 @@
+@import "global.css";
+@import "variable.css";
+@import "header/index.css";
+@import "hero/index.css";
+@import "advantages/index.css";
+@import "about-us/index.css";
+@import "gallery/index.css";
+@import "form/index.css";
+@import "footer/index.css";

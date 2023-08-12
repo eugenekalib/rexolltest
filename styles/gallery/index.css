@@ -1,0 +1,72 @@
+.gallery {
+    margin-top: 72px;
+}
+
+.gallery__title {
+    padding-bottom: 68px;
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.gallery__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 56px;
+}
+
+.gallery__card {
+    flex: 0 0 calc(100% / 4 - 50px);
+}
+
+.gallery__card-wrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-likes {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card-likes__value {
+    margin-left: 8px;
+    color: var(--gray-color);
+}
+
+.gallery__card-date {
+    margin-right: 10px;
+    color: var(--gray-color);
+}
+
+.button.active.button-gallery {
+    width: 260px;
+    display: inline-block;
+}
+
+.gallery-buttons_wrapper {
+    display: flex;
+    gap: 28px;
+    padding-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+    .gallery__card {
+        flex: 0 0 calc(100% / 2);
+        margin-bottom: 30px;
+    }
+    .gallery__cards {
+        gap: 0;
+    }
+}
+@media (max-width: 375px) {
+    .gallery-buttons_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

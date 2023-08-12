@@ -1,0 +1,13 @@
+:root {
+    --font-family-primary: 'Montserrat', sans-serif;
+    --primary-color: #F81F01;
+    --secondary-color: #EE076E;
+    --gradient-color: linear-gradient(132deg, #F81F01 0%, #EE076E 100%);
+    --white-color: #FFFFFF;
+    --black-color: #151515;
+    --backbround-color: #151515;
+    --gray-color: #C4C4C4;
+    --gray-light-color: #1B1B1B;
+    --black-light-color: #212121;
+    --white-dark-color:#BCBCBC;
+}
