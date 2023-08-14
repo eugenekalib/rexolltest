@@ -1,6 +1,7 @@
 .form {
     background: var(--black-light-color);
     color: white;
+    padding: 60px 0 98px 0;
 }
 
 .form__wrapper {
@@ -19,7 +20,6 @@
     color: var(--white-color);
     font-size: 40px;
     font-weight: 700;
-    padding-top: 60px;
 }
 
 .form__body-description {
@@ -40,37 +40,41 @@
     gap: 50px;
 }
 
-.form__body-input:nth-child(3) {
+.form__body-input {
+    flex: 1 0 calc(100% / 2 - 50px);
+    height: 50px;
+}
+
+.form__body-textarea {
     flex: 0 0 calc(100% / 1);
     height: 113px;
 }
 
-.form__content .form__body-input:nth-child(4) {
-    display: inline-block;
-    text-align: center;
+.form__body-file {
     cursor: pointer;
     border: 1px dashed var(--gray-color);
 }
 
-.form__content .form__body-input:last-child {
+.form__body-button {
     color: var(--white-color);
     font-size: 16px;
     font-weight: 700;
-    cursor: pointer;
+}
+
+.form__body-file,
+.form__body-button {
+    flex: 1 0 calc(100% / 2 - 50px);
+    text-align: center;
 }
 
 .fake-input__text {
     margin-top: 15px;
 }
 
-.form__body-file {
+.form__body-input.input-file {
     display: none;
 }
 
-.form__body-input {
-    flex: 1 0 calc(100% / 2 - 50px);
-    height: 50px;
-}
 .form__body-input:not(:last-child) {
     background: transparent;
     border: 1px solid var(--gray-color);
@@ -114,7 +118,7 @@
         width: 100%;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     .form__content {
         display: flex;
     }

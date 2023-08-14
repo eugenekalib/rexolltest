@@ -6,22 +6,22 @@
     padding-bottom: 42px;
 }
 
-.footer__span {
+.footer-brand {
     text-transform: uppercase;
 }
 
-.footer__wrapper {
+.footer__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.footer-logos {
+.footer__social-networks {
     display: flex;
     gap: 37px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     .footer__wrapper {
         display: flex;
         flex-direction: column;

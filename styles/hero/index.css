@@ -27,7 +27,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.hero__body-blockquote {
+.blockquote {
     display: inline-block;
     width: 60%;
     color: #848484;
@@ -80,7 +80,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     .hero__body-text {
         padding-left: 0;
         text-align: center;
